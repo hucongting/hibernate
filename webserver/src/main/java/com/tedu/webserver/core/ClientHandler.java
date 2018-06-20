@@ -15,8 +15,6 @@ import com.tedu.webserver.http.EmptyRequestException;
 import com.tedu.webserver.http.HttpRequest;
 import com.tedu.webserver.http.HttpResponse;
 import com.tedu.webserver.servlet.HttpServlet;
-import com.tedu.webserver.servlet.LoginServlet;
-import com.tedu.webserver.servlet.RegServlet;
 
 public class ClientHandler implements Runnable {
 	private Socket socket;
@@ -24,6 +22,7 @@ public class ClientHandler implements Runnable {
 	public ClientHandler(Socket socket) {
 		this.socket = socket;
 	}
+	@SuppressWarnings("rawtypes")
 	public void run(){
 		try {
 			//1解析请求
@@ -34,6 +33,7 @@ public class ClientHandler implements Runnable {
 			//2.1获取请求的资源路径
 			String url = request.getRequestURI();
 			
+			@SuppressWarnings("unused")
 			Map<String, String> map = new HashMap<String, String>();
 			
 			//2.2判断是否为请求业务

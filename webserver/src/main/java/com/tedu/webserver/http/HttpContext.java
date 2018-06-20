@@ -6,14 +6,10 @@ package com.tedu.webserver.http;
  */
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
@@ -38,6 +34,7 @@ public class HttpContext {
 	/**
 	 * 初始化介质类型映射
 	 */
+	@SuppressWarnings("unchecked")
 	private static void initMineTypeMapping() {
 //		MIME_TYPE_MAPPING.put("html", "text/html");
 //		MIME_TYPE_MAPPING.put("css", "text/css");

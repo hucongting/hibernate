@@ -1,7 +1,6 @@
 package com.tedu.webserver.http;
 
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
 import java.net.Socket;
 import java.net.URLDecoder;
 import java.util.HashMap;
@@ -49,6 +48,7 @@ public class HttpRequest {
 	
 
 	//对应客户端的Socket
+	@SuppressWarnings("unused")
 	private Socket socket;
 	//通过Socket获取的输入流，用于读取客户端发送的请求内容
 	private InputStream in;

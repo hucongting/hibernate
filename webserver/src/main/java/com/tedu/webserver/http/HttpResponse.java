@@ -41,6 +41,7 @@ public class HttpResponse {
 	 */
 	//响应的实体文件
 	private File entity;
+	@SuppressWarnings("unused")
 	private Socket socket;
 	private OutputStream out;
 	public HttpResponse(Socket socket) {

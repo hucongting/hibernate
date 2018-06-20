@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sve.entity">
+	<class name="User" table="user" catalog="test">
+		<id name="userid" column="userid">
+			<generator class="native"></generator>
+		</id>
+		<property name="username" column="username" length="50" />
+		<property name="userpwd" column="userpwd" /> <!-- 默认长度255 -->
+	</class>
+</hibernate-mapping>
