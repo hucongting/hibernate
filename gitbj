@@ -1,0 +1,24 @@
+Git是实际项目开发中进行代码管理的神器.
+
+Git是一种代码版本控制工具。我们在实际项目中和天码营的学习过程中都会产生大量的项目代码，Git可以帮助我们记录项目中每一个文件的每一次改动记录，如果我们误删了重要的信息或者需要找回很久以前的某一段内容，能够很容易的得到以前某一个时刻的内容。同时Git还能够支持代码的协作，Git能够将多个人的工作成果进行自动合并。
+
+1.安装Git
+Windows系统下的安装
+Linux系统下的安装
+1.1确认Git安装:在命令行下输入git --version
+
+2.Git配置
+$ git config --global user.name "xxxx" 
+$ git config --global user.email "xxxxx@xx.com" 
+	--global表示这个配置是一个系统全局配置，也就是说在当前系统中任何地方使用Git都会采用刚才你输入的名字和Email地址。
+这里你可以将user.name和user.email设置为你在GitHub的用户名和注册邮件。
+
+
+###管理远程仓库
+1.克隆仓库
+一个团队的实际开发中，通常需要一台24小时在线的服务器，每一个开发者都从这个“中央服务器”上克隆仓库到本地，并将各自的提交推送到“中央服务器”的仓库中。Git本身提供服务器支持。需要Git远程仓库。
+>git clone 仓库地址 (https://github.com/hucongting/test.git  --> test项目地址(HTTPS))
+
+
+windwos安装centos7: https://blog.csdn.net/u010246789/article/details/51754660
+
